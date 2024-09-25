@@ -17,7 +17,7 @@ make
 ~~~
 cd ..
 ./build/myapp 
-~~
+~~~
 
 
 You should then get output something like this...
