@@ -6,7 +6,7 @@ set(TARGET myapp)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(LUA_VERSION "lua-5.3.5")
+set(LUA_VERSION "lua-5.4.7")
 
 include(ExternalProject)
 
@@ -32,5 +32,5 @@ add_executable(${TARGET}  ./src/main.cpp)
 add_dependencies(${TARGET} lua_project) # Ensure Lua is built before your project
 target_include_directories(${TARGET} PRIVATE ${LUA_INCLUDE_DIR})
 target_link_libraries(${TARGET} PRIVATE ${LUA_LIBRARIES})
-
+target_link_libraries(${TARGET} PRIVATE m)
 

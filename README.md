@@ -20,10 +20,12 @@ cd ..
 ~~~
 
 
-You should then get output something like this...
+You should then get output something like this
 
 ~~~
 Hello World (from Lua!)
 ~~~
+ 
+### More Details
 
-
+Go to a more complete [discussion with notes](https://www.seanbutler.net/2024/08/26/cmake-lua-cpp-project.html) of this project.
